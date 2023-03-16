@@ -1,9 +1,3 @@
-if getgenv().AntiAfk_Loaded then
-    return
-else
-    getgenv().AntiAfkLoaded = true
-end
-
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game:GetService("Workspace").Players:FindFirstChild(game:GetService("Players").LocalPlayer.Name)
 
